@@ -18,6 +18,16 @@ npm run preview
 
 `npm run check` runs the TypeScript checks alone. The production output is in `dist/` and can be served by any static host. No server, API key, or environment variables are required.
 
+## GitHub Pages
+
+Website: **https://javinezcyver.github.io/MyPortfolio/**
+
+The deployment workflow is stored at the repository root in `.github/workflows/deploy-pages.yml`. It installs dependencies and builds the React app from `developer-portfolio/`, then publishes only `developer-portfolio/dist` to GitHub Pages. The Pages publishing source must be **GitHub Actions** in the repository's Settings > Pages.
+
+Pushing portfolio changes to `main` automatically builds and deploys the site. You can also run the workflow manually from the repository's Actions tab. The workflow sets `PORTFOLIO_BASE_PATH` to `/MyPortfolio/` so scripts, styles, fonts, and the favicon resolve beneath the repository's Pages URL. Local development keeps the normal `/` path.
+
+Do not publish the repository root as a static directory: it contains the React source, not a built root `index.html`.
+
 ## Make it yours
 
 Edit **`src/data/portfolio.ts`** for your name, introductory copy, email, social URLs, availability, technologies, and project details. The portfolio is personalized for **CYVER JAVINES**, with the GitHub profile **[JavinezCyver](https://github.com/JavinezCyver)** and four verified public repositories:
