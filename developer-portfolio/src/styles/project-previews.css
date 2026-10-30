@@ -1,0 +1,434 @@
+/* Original, illustrative artwork for the four public repositories. */
+.project-preview {
+  height: 270px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid #29313d90;
+}
+.project-art-window {
+  width: 87%;
+  max-width: 440px;
+  height: 204px;
+  border-radius: 8px;
+  background: #14141eea;
+  border: 1px solid #a78bfa30;
+  box-shadow: 0 15px 30px #00000025;
+  transform: perspective(900px) rotateX(3deg) rotateY(-3deg) rotate(-1deg);
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+.project-art-chrome {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-inline: 11px;
+  border-bottom: 1px solid #ffffff0c;
+  color: #b5adbf;
+  font-size: 6px;
+}
+.art-window-dots {
+  display: flex;
+  gap: 4px;
+}
+.art-window-dots i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #a89ab270;
+}
+.art-window-mark {
+  font-size: 10px;
+}
+.preview-caption {
+  position: absolute;
+  bottom: 13px;
+  font-size: 6px;
+  letter-spacing: 0.17em;
+  color: #b0a3c3;
+}
+.art-product-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9px;
+  color: #d4c9e7;
+}
+.art-introduction h4 {
+  font-size: clamp(17px, 2.3vw, 27px);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1.12;
+  margin-top: 13px;
+}
+.art-introduction h4 > span {
+  color: #bca0ed;
+}
+.art-introduction > p {
+  font-size: 8px;
+  line-height: 1.7;
+  color: #a29aae;
+  margin-top: 9px;
+}
+.art-small-label {
+  display: block;
+  font-size: 5px;
+  letter-spacing: 0.1em;
+  color: #aaa0b8;
+}
+.art-introduction > .art-small-label {
+  margin-top: 15px;
+}
+.quiz-art-body,
+.mist-art-body,
+.music-art-body,
+.visor-art-body {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 12px;
+  height: 180px;
+  padding: 20px 22px;
+  align-items: center;
+}
+.preview-quizcraft {
+  background: radial-gradient(ellipse at 70% 20%, #67518b3d, transparent 75%), #211d2d;
+}
+.quiz-art-cards {
+  position: relative;
+  height: 134px;
+  width: min(100%, 151px);
+  justify-self: end;
+}
+.quiz-back-card {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  border: 1px solid #9f7ed64a;
+  background: #31243e;
+  transform: rotate(8deg);
+}
+.quiz-front-card {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  border: 1px solid #b494ef47;
+  background: linear-gradient(135deg, #332640, #1c1a29);
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.quiz-front-card > svg {
+  color: #bba0e5;
+  margin-top: 12px;
+}
+.quiz-front-card strong {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #e5dcef;
+  margin-top: 7px;
+}
+.quiz-art-answer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: auto;
+  font-size: 5px;
+  color: #acbfae;
+}
+.preview-mist {
+  background: radial-gradient(ellipse at 65% 20%, #d3a0bb29, transparent 75%), #372331;
+}
+.preview-mist .project-art-window {
+  background: #f3e8ed;
+  color: #604153;
+  border-color: #f7deed7a;
+  transform: perspective(900px) rotateX(3deg) rotateY(-3deg) rotate(1deg);
+}
+.preview-mist .project-art-chrome {
+  color: #8f6d83;
+  border-color: #6c435719;
+}
+.preview-mist .art-window-dots i {
+  background: #a7829677;
+}
+.preview-mist .art-product-name {
+  color: #82526a;
+}
+.preview-mist .art-introduction h4 {
+  font-weight: 400;
+}
+.preview-mist .art-introduction h4 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: #9d657f;
+}
+.preview-mist .art-introduction > p {
+  color: #9a7b8b;
+}
+.mist-art-body {
+  grid-template-columns: 1.45fr 1fr;
+  padding-top: 15px;
+}
+.mist-art-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 6px;
+  background: #a66886;
+  color: #fbf0f5;
+  padding: 6px 8px;
+  margin-top: 11px;
+  border-radius: 3px;
+}
+.mist-filmstrip {
+  justify-self: center;
+  padding: 6px 6px 4px;
+  display: grid;
+  gap: 4px;
+  width: 71px;
+  background: #fff9fb;
+  transform: rotate(8deg);
+  box-shadow: 4px 6px 14px #76485f30;
+}
+.photo-moment {
+  width: 100%;
+  height: 38px;
+  object-fit: cover;
+}
+.moment-2 {
+  filter: hue-rotate(23deg) saturate(0.7);
+}
+.moment-3 {
+  filter: hue-rotate(-20deg) saturate(0.8);
+}
+.mist-filmstrip > span {
+  font-family: Georgia, serif;
+  font-size: 5px;
+  text-align: center;
+  color: #9d758b;
+  margin-top: 1px;
+}
+.preview-mist .preview-caption {
+  color: #c3a2b6;
+}
+.preview-music {
+  background: radial-gradient(ellipse at 80% 20%, #667cae2b, transparent 75%), #1d2434;
+}
+.preview-music .project-art-window {
+  background: #141a29;
+  border-color: #7e98c333;
+}
+.preview-music .art-product-name {
+  color: #a4b5d3;
+}
+.preview-music .art-introduction h4 > span {
+  color: #a3b5df;
+}
+.music-art-nav {
+  display: grid;
+  gap: 9px;
+  font-size: 7px;
+  margin-top: 18px;
+  color: #93a5c1;
+}
+.music-art-nav > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.music-art-player {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #8ba2d230;
+  background: #20293a;
+  width: min(100%, 149px);
+  justify-self: end;
+}
+.music-art-record {
+  width: 88px;
+  height: 88px;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #5b6388, #292d48);
+}
+.music-art-record > span {
+  position: absolute;
+  inset: 7px;
+  border: 1px solid #aeb4d330;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 0 6px #b0bdd009,
+    inset 0 0 0 12px #121a2926,
+    inset 0 0 0 18px #b0bdd009;
+}
+.music-art-record > svg {
+  color: #c5c8e6;
+}
+.music-art-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  color: #c4cce1;
+  margin-top: 9px;
+  font-size: 4px;
+  letter-spacing: 0.1em;
+}
+.music-art-timeline {
+  height: 2px;
+  background: #4a5471;
+  border-radius: 3px;
+  margin-top: 8px;
+}
+.music-art-timeline > span {
+  display: block;
+  width: 39%;
+  height: 100%;
+  background: #abbce6;
+  border-radius: inherit;
+}
+.preview-music .preview-caption {
+  color: #9eacc6;
+}
+.preview-facevisor {
+  background: radial-gradient(ellipse at 80% 20%, #7caa9633, transparent 75%), #1d2c2a;
+}
+.preview-facevisor .project-art-window {
+  background: #14201f;
+  border-color: #9bc9bb30;
+}
+.preview-facevisor .art-product-name {
+  color: #a3c2b5;
+}
+.preview-facevisor .art-introduction h4 > span {
+  color: #abcabc;
+}
+.preview-facevisor .art-introduction > p,
+.preview-facevisor .art-small-label {
+  color: #93aaa0;
+}
+.visor-art-frame {
+  border: 1px solid #8bb8a630;
+  background: #243b3440;
+  border-radius: 9px;
+  padding: 8px;
+  width: min(100%, 140px);
+  justify-self: end;
+}
+.visor-art-frame > svg {
+  display: block;
+  width: 100%;
+  height: 115px;
+}
+.visor-art-frame > span {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  color: #a7c7b8;
+  font-size: 5px;
+  margin-top: 5px;
+}
+.preview-facevisor .preview-caption {
+  color: #a0b9ad;
+}
+@media (max-width: 767px) {
+  .project-preview {
+    height: 245px;
+  }
+  .project-art-window {
+    width: 89%;
+    height: 189px;
+  }
+  .quiz-art-body,
+  .mist-art-body,
+  .music-art-body,
+  .visor-art-body {
+    height: 165px;
+    padding: 16px;
+    gap: 10px;
+  }
+  .art-introduction h4 {
+    font-size: clamp(17px, 4.6vw, 24px);
+  }
+  .art-product-name {
+    font-size: 8px;
+  }
+  .art-introduction > p {
+    font-size: 7px;
+  }
+  .quiz-art-cards {
+    height: 127px;
+    max-width: 132px;
+  }
+  .quiz-front-card {
+    padding: 10px;
+  }
+  .quiz-front-card strong {
+    font-size: 11px;
+  }
+  .music-art-player {
+    padding: 10px;
+  }
+  .music-art-record {
+    width: 72px;
+    height: 72px;
+  }
+  .visor-art-frame > svg {
+    height: 102px;
+  }
+  .preview-caption {
+    font-size: 5px;
+  }
+}
+@media (max-width: 370px) {
+  .quiz-art-body,
+  .mist-art-body,
+  .music-art-body,
+  .visor-art-body {
+    padding-inline: 11px;
+    gap: 8px;
+  }
+  .art-product-name {
+    font-size: 7px;
+    gap: 4px;
+  }
+  .art-introduction h4 {
+    font-size: 17px;
+  }
+  .art-small-label {
+    font-size: 4px;
+  }
+  .quiz-front-card strong {
+    font-size: 10px;
+  }
+  .quiz-art-answer {
+    font-size: 4px;
+  }
+  .music-art-record {
+    width: 61px;
+    height: 61px;
+  }
+  .music-art-player {
+    padding: 8px;
+  }
+  .visor-art-frame {
+    padding: 5px;
+  }
+  .visor-art-frame > span {
+    font-size: 4px;
+    gap: 3px;
+  }
+}
