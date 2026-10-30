@@ -1,7 +1,0 @@
-node_modules/
-dist/
-*.local
-*.tsbuildinfo
-.sites-runtime/
-artifacts/
-.DS_Store
